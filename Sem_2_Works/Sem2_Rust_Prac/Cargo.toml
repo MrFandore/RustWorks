@@ -1,0 +1,6 @@
+[package]
+name = "Sem2_Rust_Prac"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
