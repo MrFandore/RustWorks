@@ -1,0 +1,17 @@
+[package]
+name = "Kursach"
+version = "0.2.4"
+edition = "2021"
+
+[dependencies]
+device_query = "2.0"
+tokio = { version = "1.42", features = ["rt-multi-thread", "time", "macros", "sync", "signal"] }
+log = "0.4"
+env_logger = "0.11"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+anyhow = "1.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
